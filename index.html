@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SchoolVault</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="SchoolVault home">
+        <span class="brand-mark">SV</span>
+        <span>SchoolVault</span>
+      </a>
+
+      <nav class="top-nav">
+        <a href="#inventory">Inventory</a>
+        <a href="#expiring">Expiring Devices</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Device Estate</p>
+          <h1>School device inventory</h1>
+          <p>
+            Track school-owned devices, current stock levels, and upcoming replacement dates.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="inventory">
+        <h2>Device Inventory</h2>
+
+        <div class="device-grid">
+          <div class="device-card">
+            <h3>iPads</h3>
+            <p>Tablet devices used in classrooms and shared learning sets.</p>
+            <strong>128</strong>
+          </div>
+
+          <div class="device-card">
+            <h3>Chromebooks</h3>
+            <p>Portable browser-based devices for students and assessments.</p>
+            <strong>214</strong>
+          </div>
+
+          <div class="device-card">
+            <h3>Windows Desktops</h3>
+            <p>Fixed classroom, office, library, and computer suite machines.</p>
+            <strong>86</strong>
+          </div>
+
+          <div class="device-card">
+            <h3>Smart Boards</h3>
+            <p>Interactive classroom displays used for teaching.</p>
+            <strong>42</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="expiring">
+        <h2>Device Expiry Dates</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Device Type</th>
+              <th>Location</th>
+              <th>Quantity</th>
+              <th>Expiry Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Chromebooks</td>
+              <td>Library trolley</td>
+              <td>36</td>
+              <td>18 Jul 2026</td>
+              <td><span class="status danger">Due soon</span></td>
+            </tr>
+
+            <tr>
+              <td>Windows Desktops</td>
+              <td>ICT Suite 1</td>
+              <td>28</td>
+              <td>01 Sep 2026</td>
+              <td><span class="status danger">Due soon</span></td>
+            </tr>
+
+            <tr>
+              <td>iPads</td>
+              <td>Year 3 shared set</td>
+              <td>32</td>
+              <td>15 Dec 2026</td>
+              <td><span class="status warning">Within 12 months</span></td>
+            </tr>
+
+            <tr>
+              <td>Smart Boards</td>
+              <td>Maths corridor</td>
+              <td>8</td>
+              <td>20 Jan 2028</td>
+              <td><span class="status ok">Planned</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
